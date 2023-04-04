@@ -1,0 +1,92 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+
+form input:hover, form label:hover{
+    /* transform: translateX(-250px); */
+    transform: rotate(720deg);
+    transition: all 1s;
+}
+
+
+.tricky:hover {
+    opacity: 0;
+}
+
+.big {
+    width: 200px;
+    height: 50px;
+    margin: 25px
+}
+
+.bcA {
+    background-image: url('https://i.pinimg.com/236x/93/79/db/9379dbd6386dc3d485d952a268632542.jpg');
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 250px;
+    height: 250px;
+
+    color: white;
+    z-index: -1;
+}
+
+.bcB {
+    background-image: url('https://i.imgflip.com/152kbc.jpg');
+    width: 750px;
+    height: 950px;
+    z-index: 99;
+    position: absolute;
+    top:450px;
+    right:0;
+
+    animation-name: reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.bcC {
+    background-image: url('https://media.tenor.com/3KMFjhdufaoAAAAd/sad-cat-whit-a-glass-of-wine.gif');
+    width: 550px;
+    height: 650px;
+    z-index: 99;
+    position: absolute;
+    top:350px;
+    left:0;
+    background-position: center;
+    background-size: cover;
+
+    /* animation-name: reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes reverse {
+    0% {
+        transform: rotate3d(0, 0, 0);
+    }
+
+    50% {
+        /* transform: rotate3d(0.2, 1, 0.2, 180deg); */
+        transform: rotate3d(0.2, 1, 0.2, 180deg);
+    }
+
+    100% {
+        /* transform: rotate3D(0deg, 0deg); */
+        transform: rotate3d(0, 0, 0);
+    }
+}
