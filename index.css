@@ -11,6 +11,13 @@ body {
 
 }
 
+#root {
+    display: block;
+    animation-name: reverse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
 
 form input:hover, form label:hover{
     /* transform: translateX(-250px); */
@@ -63,30 +70,28 @@ form input:hover, form label:hover{
     height: 650px;
     z-index: 99;
     position: absolute;
-    top:350px;
+    top: 290px;
     left:0;
     background-position: center;
     background-size: cover;
 
-    /* animation-name: reverse;
+    animation-name: reverse;
     animation-iteration-count: infinite;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 @keyframes reverse {
     0% {
-        transform: rotate3d(0, 0, 0);
+        transform: rotate3d(0, 0, 0, 0);
     }
 
     50% {
-        /* transform: rotate3d(0.2, 1, 0.2, 180deg); */
         transform: rotate3d(0.2, 1, 0.2, 180deg);
     }
 
     100% {
-        /* transform: rotate3D(0deg, 0deg); */
-        transform: rotate3d(0, 0, 0);
+        transform: rotate3d(0, 0, 0, 0);
     }
 }
